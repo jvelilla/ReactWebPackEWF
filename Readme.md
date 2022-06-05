@@ -86,13 +86,14 @@ npm install @babel/core --save-dev
 ```
 
 ### Installing Babel/loader
-We need to install the package [babel-loader](https://webpack.js.org/loaders/babel-loader/) which is a webpack loader that will help webpack to use babel transpiler. Loads ES2015+ code and transpiles to ES5 using Babel
-
-There are different types of [loaders](https://webpack.js.org/loaders/), webpack use loaders to preprocess files. 
+We need to install the package [babel-loader](https://webpack.js.org/loaders/babel-loader/) which is a webpack loader that will help webpack to use babel transpiler. Loads ES2015+ code and transpile to ES5 using Babel
 
 ```
 npm install babel-loader --save-dev
 ```
+
+There are different types of [loaders](https://webpack.js.org/loaders/), webpack uses loaders to preprocess files. 
+
 
 ### Installing Babel/preset-react
 This package [@babel/preset-react ](https://babeljs.io/docs/en/babel-preset-react) contains presets with multiple plugins for React. In Babel, a [preset](https://babeljs.io/docs/en/presets/) is a set of plugins that support language features.
