@@ -20,8 +20,8 @@ So a module bundler takes file of different types (js, Html, images, CSS) and pa
 
 ### Why do we need Babel?
 
-With React we will be using the latest version of JavaScript code. Most Browsers
-doesn't undertand the latest version of Javascript, that's why we need a transpiler, a tool that convert one type of souce code to another type of source code. [Babel](https://babeljs.io/) is a transpiler, that converts ES5 and ES6 code to code that browsers understand.
+With React we will be using the latest version of JavaScript code. Most browsers
+don't understand the latest version of Javascript, which is why we need a transpiler, a tool that converts one type of source code to another type of source code. [Babel](https://babeljs.io/) is a transpiler, that converts ES5 and ES6 code to code that browsers understand.
 
 Note: you will need to have Node.js and NPM installed.
 
