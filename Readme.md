@@ -111,7 +111,7 @@ npm install @babel/preset-env --save-dev
 
 
 ### Installing HTMLWebPack plugin
-Finally we need to install the package [HTMLWebpackPlugin](https://webpack.js.org/plugins/html-webpack-plugin/). It simplifies creation of HTML files to serve your webpack bundles. This is especially useful for webpack bundles that include a hash in the filename which changes every compilation.
+Finally, we need to install the package [HTMLWebpackPlugin](https://webpack.js.org/plugins/html-webpack-plugin/). It simplifies the creation of HTML files to serve your webpack bundles. This is especially useful for webpack bundles that include a hash in the filename, which changes every compilation.
 
 ```
 npm install html-webpack-plugin --save-dev
