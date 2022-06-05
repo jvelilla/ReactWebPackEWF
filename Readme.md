@@ -308,8 +308,7 @@ module.exports = {
 ```
 
 ## Configuring Babel Loader
-Now we need to configure webpack to transpile JavaScript files. We use [modules](https://webpack.js.org/concepts/modules) with [rules](https://webpack.js.org/configuration/module/#rule) to let webpack know how the module is created.
-
+Now we need to configure webpack to transpile JavaScript files. We use [modules](https://webpack.js.org/concepts/modules) with [rules](https://webpack.js.org/configuration/module/#rule) to let webpack know how the module it's created.
 
 ```
  module: {
@@ -330,7 +329,7 @@ Now we need to configure webpack to transpile JavaScript files. We use [modules]
 
 In this rule, we tell webpack to use `babel-loader` to transpile files that end with `.js` excluding files from the `/node_modules/`.
 
-Now we will extend our rule to use the predefined configurations to transpile different type of Javascript to browsers, using the presets we already installed.
+Now, we will extend our rule to use the predefined configurations to transpile different type of Javascript to browsers, using the presets we already installed.
 With `@babel/preset-env` transpile ES2015+ syntax and `@babel/preset-react` for transpiling react code
 
 
@@ -351,8 +350,44 @@ With `@babel/preset-env` transpile ES2015+ syntax and `@babel/preset-react` for 
     ]
   }
 ```
+ The final `webpack.config.js` is
 
-## Build and Run and Distribute
+```
+const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+module.exports = {
+  entry: path.join(__dirname, "src", "index.js"),
+
+  output: {
+    path:path.resolve(__dirname, "dist"),
+    filename: 'bundle.js'
+  },
+
+  module: {
+    rules: [
+      {
+        test: /\.?js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader",
+          options: {
+                    presets: ['@babel/preset-env', '@babel/preset-react']
+            }
+         }
+      }
+    ]
+  },
+
+  plugins: [
+  new HtmlWebpackPlugin({
+      template: path.join(__dirname, "src", "index.html"),
+    })
+  ]
+
+}
+```
+
+## Build and Run
 Finally we need to configure a few scripts to build and run our application in the `package.json`.
 
 
