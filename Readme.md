@@ -176,10 +176,10 @@ touch webpack.config.js
 ```
 
 ### WebPack Entry Point
-First we need to define the [entry point](https://webpack.js.org/concepts/entry-points/). The [entry point](https://webpack.js.org/concepts/#entry) is basically where our application begins.
-In our simple example it's the file called `index.js` inside the directory `src`.
+First, we need to define the [entry point](https://webpack.js.org/concepts/entry-points/). The [entry point](https://webpack.js.org/concepts/#entry) is basically where our application begins.
+In our simple example, the entry point is the file called `index.js` inside the directory `src`.
 
-We use the built in Node.js [path](https://nodejs.org/api/path.html) module to handle file paths.
+We use the built-in Node.js [path](https://nodejs.org/api/path.html) module to handle file paths.
 
 ```
 const path = require('path');
