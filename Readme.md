@@ -189,7 +189,7 @@ module.exports = {
 }
 ```
 
-### Configure WebPack output path for the bundled file
+### Configure the WebPack output path for the bundled file
 We now need to configure webpack to create a final bundle. We need to provide the name and location where it will be generated. This is done using the [output](https://webpack.js.org/concepts/output/) key.
 
 
@@ -199,12 +199,12 @@ We now need to configure webpack to create a final bundle. We need to provide th
     filename: 'bundle.js'
   }
 ```
-Here a bundled file named `bundle.js` is generated in a `dist` folder in the root of the project.
+Here a bundled file named `bundle.js` is generated in a `dist` folder at the root of the project.
 
 
 ### Extending our simple example.
 
-To make this simple project more interesting we will extend our project with a new component App.
+To make this simple project more interesting. We will extend our project with a new component App.
 
 Create a new file App.js inside the `src` directory.
 
@@ -224,7 +224,7 @@ export default function App(){
 }
 ```
 
-Now we need to update our `index.js` file as follow to use our new React component `App`
+Now we need to update our `index.js` file as follows to use our new React component `App`
 
 
 `index.js`
@@ -239,12 +239,12 @@ const root = createRoot(container)
 root.render(<App/>) //(2)
 ```
 
-As you can see we have modified our `index.js` file to use our component App, in the point (1) we import the component App with
+As you can see, we have modified our `index.js` file to use our component App, point (1), import the component App with
 
 `import App from "./App"`
 
 
-And then when we call the render method in point (2) we call our React component.
+And then, when we call the render method in point (2) we call our React component.
 
 `root.render(<App/>)`
 
