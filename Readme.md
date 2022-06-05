@@ -34,7 +34,7 @@ Note: you will need to have Node.js and NPM installed.
 ``` 
 
 If you don't have it install it with : 
-* https://github.com/nvm-sh/nvm for Windows 
+* https://github.com/nvm-sh/nvm 
 * https://github.com/coreybutler/nvm-windows
 
 ## Setup React App.
