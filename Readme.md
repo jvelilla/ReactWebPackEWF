@@ -169,7 +169,7 @@ Now we need to configure webpack
 
 #### Add WebPack Configuration file.
 
-We will create a file named `webpack.config.js` to put all our configuration. Creat the file `webpack.config.js` at the root folder of the project.
+We will create a file named `webpack.config.js` to put all our configurations. Create the file `webpack.config.js` at the root folder of the project.
 
 ```
 touch webpack.config.js
