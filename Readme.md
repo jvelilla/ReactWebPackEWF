@@ -9,16 +9,16 @@
 
 ## Create a React application from scracth by configuring Webpack and Babel.
 
-### Why we need a Module Bundler?
+### Why do we need a Module Bundler?
 
-Module bundlers are tools frontend developers used to bundle JavaScript modules into single JavaScript files that can be executed in the browsers. This is required because module systems (ESM or CommonJs) are still not supported by the browsers.  Example of module blunders are: [Webpack](https://webpack.js.org/), rollup, fusebox, etc
+Module bundlers are tools frontend developers used to bundle JavaScript modules into single JavaScript files that can be executed in the browsers. This is required because module systems ([ESM](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules) or [CommonJs](https://requirejs.org/docs/commonjs.html)) are still not supported by the browsers.  Examples of module blunders are: [Webpack](https://webpack.js.org/), [Browserfy](https://browserify.org/),[rollup](https://rollupjs.org/guide/en/),  [parcel](https://parceljs.org/), etc
 
 To learn more about [JavaScript Modules and Browser Support]( https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
 
 
-So a module bundler takes file of different types (js, html, images, css) and package them in groups of smaller files. It also manage dependencies and import them in the correct order. In this tutorial we will use [webpack](https://webpack.js.org/), since it's one of the most used one.
+So a module bundler takes file of different types (js, Html, images, CSS) and packages them in groups of smaller files. It also manages dependencies and import them in the correct order. In this tutorial, we will use [webpack](https://webpack.js.org/), since it's one of the most used ones.
 
-### Why we need Babel?
+### Why do we need Babel?
 
 With React we will be using the latest version of JavaScript code. Most Browsers
 doesn't undertand the latest version of Javascript, that's why we need a transpiler, a tool that convert one type of souce code to another type of source code. [Babel](https://babeljs.io/) is a transpiler, that converts ES5 and ES6 code to code that browsers understand.
