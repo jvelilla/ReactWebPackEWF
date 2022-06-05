@@ -39,7 +39,7 @@ If you don't have it install it with :
 
 ## Setup React App.
 
-First lets create our project folder, were we will have our React application.
+First things first, let's create our project folder, where we will have our React application.
 
 ```
 mkdir react_app
@@ -60,7 +60,7 @@ The -y parameter generates an empty npm project without going through an interac
 ## Installing Required Dependencies.
 
 ### Installing React and ReactDOM
-Before we can write some code we need to install [React](https://reactjs.org/) and ReactDOM 
+Before we can write some code, we need to install [React](https://reactjs.org/) and ReactDOM 
 
 
 ``` 
@@ -72,7 +72,7 @@ npm install react react-dom
 
 ### Installing Webpack
 
-Lets now install our module bundler webpack as a dev dependency since we only need it when we are developing it. We also need to install as dev dependencies [webpack-cli](https://www.npmjs.com/package/webpack-cli) to run webpack commands and [webpack-dev-server](https://www.npmjs.com/package/webpack-dev-server) to run React locally with live reload (useful when we are developing the client side code).
+Lets now install webpack, as a development dependency since we only need for development. We also need to install as development dependencies [webpack-cli](https://www.npmjs.com/package/webpack-cli) (to run webpack commands) and [webpack-dev-server](https://www.npmjs.com/package/webpack-dev-server) (to run React locally with live reload)
 
 ```
 	npm install webpack webpack-cli webpack-dev-server --save-dev
