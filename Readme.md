@@ -23,10 +23,19 @@ So a module bundler takes file of different types (js, html, images, css) and pa
 With React we will be using the latest version of JavaScript code. Most Browsers
 doesn't undertand the latest version of Javascript, that's why we need a transpiler, a tool that convert one type of souce code to another type of source code. [Babel](https://babeljs.io/) is a transpiler, that converts ES5 and ES6 code to code that browsers understand.
 
-Note: you will need to have Node.js and NPM installed. 
+Note: you will need to have Node.js and NPM installed.
 
-If you don't have it installed use: https://github.com/nvm-sh/nvm
-for Windows https://github.com/coreybutler/nvm-windows
+```
+	$>node --version
+	$>v18.0.0
+
+	$>npm --version
+	$>8.6.0
+``` 
+
+If you don't have it install it with : 
+* https://github.com/nvm-sh/nvm for Windows 
+* https://github.com/coreybutler/nvm-windows
 
 ## Setup React App.
 
