@@ -250,16 +250,16 @@ And then, when we call the render method in point (2) we call our React componen
 
 
 ### HTML file for Bundled file.
-Once the bundled Javascript file `bundled.js` was generated, we want to load it into our HTML file `index.html` using a `script` tag. To do that we will use the `HTMLWebpackPlugin ` that we installed previously. So now we are going to use this [plugin](https://webpack.js.org/concepts/plugins/).
+Once the bundled Javascript file `bundled.js` was generated, we want to load it into our HTML file `index.html` using a `script` tag.s To do that we will use the `HTMLWebpackPlugin ` that we installed previously. So now we are going to use this [plugin](https://webpack.js.org/concepts/plugins/).
 
-First we need to add the plugin to our webpack configuration file.
+First, we need to add the plugin to our webpack configuration file.
 
 
 ```
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 ```
 
-Then we register the HtmlWebpackPlugin as a plugin in our configuration file as follow
+Then we register the HtmlWebpackPlugin as a plugin in our configuration file as follows
 
 ```
 
@@ -270,7 +270,7 @@ plugins: [
 ]
 ```
 
-This will tell webpack to use a file `index.html` from the `src` directory and inject the bundled file `bundled.js` and finally move that HTML file to the output directory `dist`
+This will tell webpack to use a file `index.html` from the `src` directory and inject the bundled file `bundled.js` and finally move that HTML file to the output directory `dist`.
 
 The generated file `dist\index.html` will look like this
 
@@ -285,6 +285,26 @@ The generated file `dist\index.html` will look like this
     <script src="bundle.js"></script>
   </body>
 </html>
+```
+
+At this point, our webpack.config.js will look like this
+```
+const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+module.exports = {
+  entry: path.join(__dirname, "src", "index.js"),
+
+  output: {
+    path:path.resolve(__dirname, "dist"),
+    filename: 'bundle.js'
+  },
+
+  plugins: [
+  new HtmlWebpackPlugin({
+      template: path.join(__dirname, "src", "index.html"),
+    })
+  ]
+}
 ```
 
 ## Configuring Babel Loader
