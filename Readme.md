@@ -116,7 +116,7 @@ Finally we need to install the package [HTMLWebpackPlugin](https://webpack.js.or
 npm install html-webpack-plugin --save-dev
 ```
 
-Now that we have install all our dependencies we will create our simple React application.
+Now that we have installed all our dependencies we will create our simple React application.
 
 ## Create an HTML and JavaScript file.
 Create a new source folder `src`
